@@ -71,6 +71,15 @@ No action is required from the user to satisfy these dependencies. `cuCollection
 
 ## Building cuCollections
 
+## Conda Environment Setup for UVA CS cluster
+There is an interdependency of gcc version and nvidia runtime. Loading module from the CS cluster will not work. So we will create a conda environment and install all dependent libraries with proper channel.
+
+```bash
+conda env create -f conda/cuconda.yml
+conda activate beenish_dev
+```
+These are all libraries in the yml file. Some libraries are not mandatory. I kept for future building of cuda data frame
+
 Since `cuCollections` is header-only, there is nothing to build to use it.
 
 To build the tests, benchmarks, and examples:

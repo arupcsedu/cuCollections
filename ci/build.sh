@@ -153,7 +153,7 @@ fi
 if [ "$BUILD_TESTS" == "OFF" ] && [ "$BUILD_EXAMPLES" == "OFF" ] && [ "$BUILD_BENCHMARKS" == "OFF" ]; then
     BUILD_TESTS=ON
     BUILD_EXAMPLES=ON
-    BUILD_BENCHMARKS=ON
+    BUILD_BENCHMARKS=OFF
 fi
 
 # Trigger clean (re-)build
